@@ -6,10 +6,10 @@ define("PASSWORD", ""); //La contraseña de la base de datos.
 define("DATABASE", "totalsmart"); //El nombre de la base de datos.
 */
 
-define("HOST", "localhost:3306"); //El alojamiento al que deseas conectarte.
-define("USER", "root"); //El nombre de usuario de la base de datos.
-define("PASSWORD", ""); //La contraseña de la base de datos.
-define("DATABASE", "onu"); //El nombre de la base de datos.
+define("HOST", "https://vps70161.ovh.net:2083/"); //El alojamiento al que deseas conectarte.
+define("USER", "warlookr"); //El nombre de usuario de la base de datos.
+define("PASSWORD", "W808nwC3pf"); //La contraseña de la base de datos.
+define("DATABASE", "warlookr_test"); //El nombre de la base de datos.
 
 /*
 define("HOST", "totalsmart2.db.9663452.hostedresource.com"); //El alojamiento al que deseas conectarte.
@@ -26,13 +26,13 @@ $con = mysql_connect(HOST,USER,PASSWORD);
 //$pdo = new PDO('pgsql:host=192.168.137.1;port=5432;dbname=anydb', 'anyuser', 'pw');
 //$pdo = new PDO('pgsql:host=192.168.137.1; port=5432; dbname=anydb', 'anyuser', 'pw');
 
-/*
-if (!$smartIn) {
+
+if (!$con) 
+{
     die('Error al conectarse a mysql: ' . mysql_error());
-}else{
-	//echo ('Se conecto ');
-	}
-*/
-
-
+}
+else
+{
+	echo "<script>alert('Conexión exitosa!');</script>";	
+}
 ?>

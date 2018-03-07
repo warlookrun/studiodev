@@ -5,7 +5,7 @@
 	$mail = $_POST['mail'];
 	$mes = $_POST['mes'];
 
-	$ins = 'INSERT INTO at_respona (mail, mes, date) 
+	$ins = 'INSERT INTO contact (mail, mes, date) 
 			VALUES ("'.$mail.'", "'.$mes.'", "'.$fec.'") ';
 	$res = mysql_query($ins);
 	if(!$res){
